@@ -14,6 +14,7 @@ router.get("/area"  , areaController.index);
 router.get("/curso"           , cursoController.index);
 router.get("/curso/create"    , cursoController.create);
 router.post("/curso/create"    , cursoController.create);
+router.get("/curso/:id"    , cursoController.read);
 
 
 module.exports = router;
