@@ -1,0 +1,10 @@
+
+{{#if mostraTitulo}}
+<h1>{{titulo}}</h1>
+{{else}}
+<div>Página sem título</div>
+{{/if}}
+<ul>
+{{#each professores}}
+<li><strong>{{nome}}</strong>: sala{{sala}}</li>
+{{/each}}
