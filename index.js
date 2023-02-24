@@ -13,6 +13,8 @@ app.engine("handlebars", handlebars.engine({
     helpers: require(`${__dirname}/app/views/helpers`)
 }));
 
+
+
 app.set("view engine", "handlebars");
 app.set("views", `${__dirname}/app/views`);
 
@@ -28,7 +30,8 @@ app.use("/css",express.static(`${__dirname}/public/css`));
 app.use("/webfonts", express.static(`${__dirname}/node_modules/@fontawesome/fontawesome-free/webfonts`));
 
 app.use("/js", [
-    express.static(__dirname + '/node_modules/bootstrap/dist/js')
+    express.static(__dirname + '/node_modules/bootstrap/dist/js'),
+    express.static(`${__dirname}/public/js`)
 ]);
 
 app.use(logger("combined"));
