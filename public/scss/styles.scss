@@ -9,3 +9,96 @@ form [type="submit"] {
 .options a{
     padding-left: 4px;
 }
+
+.invalid-feedback{
+    display: block;
+}
+
+#space {
+    border: 1px solid black;
+    background-image: url("../img/starBackground.png");
+    position: relative;
+    overflow: hidden;
+  }
+  #bd {
+    background-image: url("../img/starBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .texto {
+      font-weight: bold;
+      font-size: 100px;
+      display: block;
+      justify-content: center;
+      position: fixed;
+      bottom: 500px;
+      left:calc(33%);
+  }
+  
+  .game_over{
+      width: 20%;
+      display: block;
+      justify-content: center;
+      position: fixed;
+      bottom: 250px;
+      left: calc(40%);
+  }
+  
+  .bt {
+      width: 40%;
+      padding: 10px 0;
+      background: orange;
+      font-weight: bold;
+      font-size: 18px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 1s all;
+      display: block;
+      justify-content: center;
+      position: fixed;
+      bottom: 50px;
+      left: calc(30%);
+  }
+  
+  #ship {
+    position: absolute;
+  }
+  
+  .enemy-ship {
+    position: absolute;
+  }
+  
+  .enemy-ufo {
+    position: absolute;
+  }
+  .meteor-big{
+    position: absolute;
+  }
+  
+  .meteor-small{
+    position: absolute;
+  }
+  
+  .laser-red{
+    position: absolute;
+  }
+  
+  .points {
+    position: absolute;
+    top: 0px;
+    margin: 40px;
+    opacity: 0.7;
+    font-size: 2em;
+    left: 450px;
+    color: white;
+  }
+  .life{
+    position: absolute;
+    top: 2px;
+    margin: 40px;
+    left: 340px;
+    opacity: 0.7;
+  }
