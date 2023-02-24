@@ -4,13 +4,9 @@ const {
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Curso extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
+    
     static associate(models) {
-      // define association here
+      this.belongsTo(models.Area)
     }
   }
   Curso.init({
@@ -19,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       validate: {
         len: {
         args: [4,4],
-        msg: 'O nome precisa ter entre 5 e 40 caracteres.'
+        msg: 'A sigla precisa conter 4 caracteres.'
         }
         }
       },
@@ -29,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
       validate: {
         len: {
         args: [5,40],
-        msg: 'O nome precisa ter entre 5 e 40 caracteres.'
+        msg: 'O nome do curso precisa ter entre 5 e 40 caracteres.'
         }
         }
     },
